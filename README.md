@@ -1,4 +1,4 @@
-## The docker images for the .NET Core SDK and Node.js environment.
+## The docker images for .NET Core SDK and Node.js environment.
 
 ### For example:
 .net core sdk **2.2** + node.js **10.x**
