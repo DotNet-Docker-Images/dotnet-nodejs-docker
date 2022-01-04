@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1
 # Install NodeJs
 RUN apt-get update \
     && apt-get install curl \
-    && curl -sL https://deb.nodesource.com/setup_12.x | bash - \ 
+    && curl -sL https://deb.nodesource.com/setup_14.x | bash - \ 
     && apt-get install -y nodejs \
     && apt-get clean \
     && echo 'node verions:' $(node -v) \
