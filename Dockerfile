@@ -1,8 +1,7 @@
 ARG DOTNET_VERSION
-ARG NODE_VERSION
-
 FROM mcr.microsoft.com/dotnet/sdk:${DOTNET_VERSION}
 
+ARG NODE_VERSION
 # Install NodeJs
 RUN apt-get -y update \
     && apt-get install -y curl \
