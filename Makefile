@@ -57,6 +57,23 @@ push-9.0-22.x: set-dotnet-9.0 set-nodejs-22.x push-core
 push-9.0-23.x: set-dotnet-9.0 set-nodejs-23.x push-core
 push-9.0-24.x: set-dotnet-9.0 set-nodejs-24.x push-core
 
+img-10.0-16.x: set-dotnet-10.0 set-nodejs-16.x img-core
+img-10.0-18.x: set-dotnet-10.0 set-nodejs-18.x img-core
+img-10.0-20.x: set-dotnet-10.0 set-nodejs-20.x img-core
+img-10.0-21.x: set-dotnet-10.0 set-nodejs-21.x img-core
+img-10.0-22.x: set-dotnet-10.0 set-nodejs-22.x img-core
+img-10.0-23.x: set-dotnet-10.0 set-nodejs-23.x img-core
+img-10.0-24.x: set-dotnet-10.0 set-nodejs-24.x img-core
+img-10.0-25.x: set-dotnet-10.0 set-nodejs-25.x img-core
+push-10.0-16.x: set-dotnet-10.0 set-nodejs-16.x push-core
+push-10.0-18.x: set-dotnet-10.0 set-nodejs-18.x push-core
+push-10.0-20.x: set-dotnet-10.0 set-nodejs-20.x push-core
+push-10.0-21.x: set-dotnet-10.0 set-nodejs-21.x push-core
+push-10.0-22.x: set-dotnet-10.0 set-nodejs-22.x push-core
+push-10.0-23.x: set-dotnet-10.0 set-nodejs-23.x push-core
+push-10.0-24.x: set-dotnet-10.0 set-nodejs-24.x push-core
+push-10.0-25.x: set-dotnet-10.0 set-nodejs-25.x push-core
+
 
 set-dotnet-5.0:
 	$(eval DOTNET_VERSION := "5.0")
@@ -68,6 +85,8 @@ set-dotnet-8.0:
 	$(eval DOTNET_VERSION := "8.0")
 set-dotnet-9.0:
 	$(eval DOTNET_VERSION := "9.0")
+set-dotnet-10.0:
+	$(eval DOTNET_VERSION := "10.0")
 
 set-nodejs-16.x:
 	$(eval NODE_VERSION := "16.x")
@@ -85,3 +104,5 @@ set-nodejs-23.x:
 	$(eval NODE_VERSION := "23.x")
 set-nodejs-24.x:
 	$(eval NODE_VERSION := "24.x")
+set-nodejs-25.x:
+	$(eval NODE_VERSION := "25.x")
